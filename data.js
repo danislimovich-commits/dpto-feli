@@ -3,6 +3,7 @@
 // price: { clp: 1234000 } o { uf: 30 }  → UF se convierte con UF_VALUE.
 // priceFrom: true muestra "desde".  approx: true = ubicación aproximada.
 // parking/storage: texto libre o null (no informado).
+// pets: true = acepta · false = no acepta · null = sin información.
 // photos: URLs; la primera es la portada.
 // ─────────────────────────────────────────────────────────────
 window.UF_VALUE = 41057.2;        // UF al 2026-09-30 (mindicador.cl)
@@ -60,7 +61,8 @@ window.PROPERTIES = [
       "Chapa electrónica",
       "Quincho y áreas verdes",
       "Garantía en 3 cuotas"
-    ]
+    ],
+    "pets": null
   },
   {
     "id": "ml-4502087628",
@@ -110,7 +112,8 @@ window.PROPERTIES = [
       "Walk-in clóset",
       "Estacionamiento incluido",
       "Piso 9, orientación norte"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2268780027",
@@ -176,7 +179,8 @@ window.PROPERTIES = [
         "label": "Proyecto Somma Asturias (Greystar)",
         "url": "https://departamento.mercadolibre.cl/MLC-1594161229"
       }
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2219181587",
@@ -225,7 +229,8 @@ window.PROPERTIES = [
       "2 estacionamientos + bodega",
       "Walk-in clóset",
       "Solo 2 deptos. por piso"
-    ]
+    ],
+    "pets": false
   },
   {
     "id": "lar-blend",
@@ -279,7 +284,8 @@ window.PROPERTIES = [
         "label": "Aviso en Portal Inmobiliario",
         "url": "https://departamento.mercadolibre.cl/MLC-4525971840"
       }
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "lar-spot-residence",
@@ -329,7 +335,8 @@ window.PROPERTIES = [
     "source": {
       "label": "LAR Group (sitio oficial)",
       "url": "https://largroup.cl/spot-residence-manquehue/"
-    }
+    },
+    "pets": true
   },
   {
     "id": "lar-spot-nk",
@@ -379,7 +386,8 @@ window.PROPERTIES = [
     "source": {
       "label": "LAR Group (sitio oficial)",
       "url": "https://largroup.cl/spot-nueva-kennedy/"
-    }
+    },
+    "pets": true
   },
   {
     "id": "ml-4469215174",
@@ -428,7 +436,8 @@ window.PROPERTIES = [
       "Piscina panorámica y temperada",
       "Gimnasio, sauna y cine",
       "Agua caliente incluida en GC"
-    ]
+    ],
+    "pets": false
   },
   {
     "id": "ml-4398186736",
@@ -478,7 +487,8 @@ window.PROPERTIES = [
       "Piscina, gimnasio y cowork",
       "Canchas de tenis y pádel",
       "Aire acondicionado"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2282629775",
@@ -525,7 +535,8 @@ window.PROPERTIES = [
       "Terraza de 19 m²",
       "Piscina en azotea y sauna",
       "Estacionamiento incluido"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2223993169",
@@ -580,7 +591,8 @@ window.PROPERTIES = [
         "label": "Otro aviso en el mismo edificio (a estrenar)",
         "url": "https://departamento.mercadolibre.cl/MLC-2214539013"
       }
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2209691107",
@@ -630,7 +642,8 @@ window.PROPERTIES = [
       "Gimnasio y lavandería 24/7",
       "Gourmet lounge y cowork",
       "Pet friendly"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2282626737",
@@ -689,7 +702,8 @@ window.PROPERTIES = [
         "label": "Proyecto Somma Vista Calán",
         "url": "https://departamento.mercadolibre.cl/MLC-2986729708"
       }
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2234073171",
@@ -738,7 +752,8 @@ window.PROPERTIES = [
       "Gastos comunes fijos",
       "Amoblado",
       "Garantía en 3 cuotas"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-4416380328",
@@ -788,7 +803,8 @@ window.PROPERTIES = [
       "Estacionamiento + bodega",
       "Internet y cable incluidos",
       "Edificio de 2 años"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-4526118230",
@@ -838,7 +854,8 @@ window.PROPERTIES = [
       "Estacionamiento + bodega",
       "Piscina en azotea",
       "Disponible en noviembre"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2215987441",
@@ -887,7 +904,8 @@ window.PROPERTIES = [
       "Dos terrazas",
       "Aire acondicionado",
       "Estacionamiento + bodega"
-    ]
+    ],
+    "pets": true
   },
   {
     "id": "ml-2282575955",
@@ -937,6 +955,110 @@ window.PROPERTIES = [
       "2 estacionamientos + bodega",
       "Piscina en azotea",
       "Aire acondicionado"
-    ]
+    ],
+    "pets": false
+  },
+  {
+    "id": "ml-4471686430",
+    "name": "Depto. Martín de Zamora",
+    "kind": "Departamento tradicional · corredora",
+    "sector": "Sebastián Elcano · Colón",
+    "address": "Martín de Zamora / Sebastián Elcano, Las Condes",
+    "price": {
+      "uf": 38
+    },
+    "gc": 250000,
+    "beds": 2,
+    "baths": 2,
+    "m2": 94.68,
+    "m2Total": 110.08,
+    "terrace": 15.4,
+    "floor": 6,
+    "parking": "2 incluidos",
+    "storage": "1 incluida",
+    "note": "De los 2D más amplios encontrados: casi 95 m² útiles y terraza con vista despejada a la que salen ambos dormitorios. Edificio de 9 años con piscina y gimnasio, a unos 10 minutos a pie de Metro Manquehue. Disponible desde el 1 de noviembre.",
+    "highlights": [
+      "95 m² útiles",
+      "Terraza de 15 m²",
+      "2 estacionamientos + bodega",
+      "Piscina y gimnasio",
+      "Agua caliente incluida en GC"
+    ],
+    "photos": [
+      "https://http2.mlstatic.com/D_NQ_NP_2X_796407-MLC115814723513_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_879395-MLC114463646738_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_928523-MLC115814949687_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_746892-MLC115814949327_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_886175-MLC114463876076_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_913761-MLC115815150251_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_869315-MLC115814837591_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_849789-MLC114463646920_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_978324-MLC114463763794_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_762698-MLC115814837703_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_704539-MLC115815150435_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_940966-MLC114463646898_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_649790-MLC114463876206_082026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_645697-MLC115815179387_082026-F.webp"
+    ],
+    "lat": -33.4174366,
+    "lng": -70.5728247,
+    "approx": true,
+    "source": {
+      "label": "Portal Inmobiliario",
+      "url": "https://departamento.mercadolibre.cl/MLC-4471686430"
+    },
+    "pets": true
+  },
+  {
+    "id": "ml-4502688338",
+    "name": "Av. Cristóbal Colón 5700",
+    "kind": "Departamento tradicional · corredora",
+    "sector": "Sebastián Elcano · Colón",
+    "address": "Av. Cristóbal Colón 5700–6000, Las Condes",
+    "price": {
+      "clp": 1700000
+    },
+    "gc": 240000,
+    "beds": 3,
+    "baths": 3,
+    "m2": 102.23,
+    "m2Total": 123.12,
+    "terrace": 20.89,
+    "floor": 3,
+    "parking": "1 incluido",
+    "storage": "1 incluida",
+    "note": "A estrenar, en un edificio de 13 pisos con solo 2 departamentos por piso. 3 dormitorios, terraza de 21 m² y climatización en todos los ambientes. Está justo en el tope del presupuesto y a unos 15 minutos a pie de Metro Manquehue.",
+    "highlights": [
+      "A estrenar",
+      "3 dormitorios",
+      "Terraza de 21 m²",
+      "Climatización integrada",
+      "Piscina y quinchos",
+      "Solo 2 deptos. por piso"
+    ],
+    "photos": [
+      "https://http2.mlstatic.com/D_NQ_NP_2X_682903-MLC116516665660_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_669737-MLC118021879915_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_936946-MLC116516547858_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_629523-MLC116515812292_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_905794-MLC116515812296_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_959049-MLC118022173253_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_665680-MLC116517016712_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_726909-MLC116516458178_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_635685-MLC116516076552_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_799452-MLC116516667342_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_673167-MLC118022819001_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_994414-MLC116515812294_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_682421-MLC118021879917_092026-F.webp",
+      "https://http2.mlstatic.com/D_NQ_NP_2X_725951-MLC118022820639_092026-F.webp"
+    ],
+    "lat": -33.4177616,
+    "lng": -70.5676362,
+    "approx": true,
+    "source": {
+      "label": "Portal Inmobiliario",
+      "url": "https://departamento.mercadolibre.cl/MLC-4502688338"
+    },
+    "pets": false
   }
 ];
