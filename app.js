@@ -23,9 +23,7 @@
   let sort = 'asc', onlyFavs = false;
 
   // ── Header copy ──
-  const min = Math.min(...LIST.map(p => p.clp)), max = Math.max(...LIST.map(p => p.clp));
-  const HEADLINE = `${LIST.length} departamentos elegidos para <em>Felipe</em>`;
-  $('#lede').textContent = `Arriendos de ${short(min)} a ${short(max)} en El Golf, Escuela Militar, Nueva Las Condes, Alto Las Condes y Vitacura. Todos con 2 dormitorios y 2 baños o más, y un estándar moderno. Toca una propiedad para ver sus fotos y datos, o márcala con ☆ para compararla después.`;
+  const HEADLINE = `${LIST.length} departamentos elegidos para <em>Feli</em>`;
   $('#ufDate').textContent = window.UF_DATE;
   $('#ufVal').textContent = money(UF);
 
@@ -68,7 +66,6 @@
     $('#empty').hidden = l.length > 0;
     $('#favCount').textContent = favs.size;
     $('#headline').innerHTML = onlyFavs ? `Tus <em>favoritos</em>` : HEADLINE;
-    $('#lede').hidden = onlyFavs;
     const ft = $('#favToggle');
     ft.setAttribute('aria-pressed', onlyFavs);
     ft.querySelector('.star').textContent = onlyFavs || favs.size ? '★' : '☆';
