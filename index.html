@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Departamentos para Felipe</title>
+  <meta name="description" content="Selección curada de departamentos en arriendo en Las Condes y Vitacura.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Departamentos para Felipe">
+  <meta property="og:description" content="Una selección curada de departamentos en arriendo en Las Condes y Vitacura.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f2a24'/%3E%3Cpath d='M9 23V13l7-5 7 5v10h-5v-6h-4v6z' fill='%23f4efe6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Dpto&nbsp;<em>Felipe</em></div>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Ordenar por precio">
+        <button type="button" data-sort="asc" class="on">Precio ↑</button>
+        <button type="button" data-sort="desc">Precio ↓</button>
+      </div>
+      <button type="button" id="favToggle" class="fav-toggle" aria-pressed="false">
+        <span class="star">☆</span> Favoritos <span id="favCount" class="count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="listing">
+      <div class="intro">
+        <p class="eyebrow">Arriendo · Las Condes y Vitacura</p>
+        <h1 id="headline">Una selección de departamentos</h1>
+        <p class="lede" id="lede"></p>
+      </div>
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <div id="empty" class="empty" hidden>
+        <div class="empty-star">☆</div>
+        <p class="empty-title">Todavía no hay favoritos</p>
+        <p>Marca la estrella de cualquier departamento para guardarlo aquí.</p>
+        <button type="button" class="btn-ghost" id="showAll">Ver todos</button>
+      </div>
+      <footer class="foot">
+        <p>Selección hecha a partir de Portal Inmobiliario y sitios oficiales de edificios multifamily. Precios en UF convertidos con la UF del <span id="ufDate"></span> (<span id="ufVal"></span>). Los gastos comunes no están incluidos en el precio. La disponibilidad puede cambiar: confirma siempre en el aviso original.</p>
+      </footer>
+    </section>
+
+    <aside class="mapwrap">
+      <div id="map" aria-label="Mapa de propiedades"></div>
+      <div class="map-legend"><span class="swatch"></span>Zona de búsqueda (aproximada)</div>
+    </aside>
+  </main>
+
+  <div id="detail" class="detail" hidden role="dialog" aria-modal="true" aria-labelledby="dName">
+    <div class="detail-backdrop" data-close></div>
+    <article class="detail-panel">
+      <button type="button" class="close" data-close aria-label="Cerrar">✕</button>
+      <div class="gallery">
+        <div class="stage">
+          <img id="dImg" alt="">
+          <button type="button" class="nav prev" aria-label="Foto anterior">‹</button>
+          <button type="button" class="nav next" aria-label="Foto siguiente">›</button>
+          <span class="counter" id="dCounter"></span>
+        </div>
+        <div class="thumbs" id="dThumbs"></div>
+      </div>
+      <div class="info" id="dInfo"></div>
+    </article>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+  <script src="data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
