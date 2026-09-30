@@ -212,7 +212,7 @@
         ${spec('Piso', p.floor)}
         ${spec('Estacionamiento', p.parking || 'No informado')}
         ${spec('Bodega', p.storage || 'No informado')}
-        ${spec('Mascotas', p.pets === true ? 'Sí' : p.pets === false ? 'No · consultar' : 'Sin información')}
+        ${spec('Mascotas', p.pets === true ? 'Sí' : p.pets === false ? 'No · preguntar' : 'Sin información')}
       </div>
       <p class="note">${esc(p.note)}</p>
       <ul class="hl-list">${(p.highlights || []).map(h => `<li>${esc(h)}</li>`).join('')}</ul>
